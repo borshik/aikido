@@ -1,0 +1,100 @@
+  body              { background-color: rgb(207,159,77);}
+  #body             { background-image: url(centr1.jpg);
+                      background-repeat:repeat-y;
+                      background-color:rgb(207,159,77) ;
+                      width: 1000px;
+                      margin-left: -500px;
+                      left: 50%;
+                      position: absolute;
+                    }
+  #midle            { position: relative;
+                      width: 700px;
+                      margin-left: -350px;
+                      left: 50%;
+                      background-position: top;
+                      background-repeat: repeat-y;
+                    }
+  #verh             { background-image: url(verh2.jpg);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      top: -20px;
+                      padding: 0; margin: 0; 
+                      position: relative;
+                      text-align: center;
+                      height: 103px;
+                    }
+  #niz              { background-image: url(niz1.jpg);
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      padding: 0; margin: 0;
+                      position: relative;
+                      text-align: center;
+                      height: 103px;
+                    }
+  #menu             { list-style: none;
+                      width: 900px;
+                      margin-left: -440px;
+                      left: 50%;
+                      position: relative;
+                      top: -22px;
+                      font-style: italic;
+                      font-weight: bold;
+                    }
+  #niz #menu             { list-style: none;
+                      width: 900px;
+                      margin-left: -440px;
+                      left: 50%;
+                      position: relative;
+                      top: -12px;
+                    }
+  #menu li          { float: left;
+                      margin-left: 20px;
+                      padding-left: 3px;
+                      font-size: 25px;
+                      width: 125px;
+                      border-left: 5px rgb(112,61,0) solid
+                    }
+  #menu li a        { text-decoration: none;
+                    }
+  A:link    { color: rgb(112,61,0)}    /* непосещённые ссылки */
+  A:visited { color: rgb(112,61,0)}   /* посещённые ссылки   */
+  A:hover   { color: green } /* пользователь провёл над */
+  A:active  { color: black }
+  #active             { color: black;}
+  #beztochek        { text-decoration: none;}
+  #menu a {
+text-decoration: none;
+}
+#menu111 ul #im {
+position: absolute;
+z-index: 500;
+}
+div#menu111 ul #im {
+display: none;
+}
+div#menu111 ul li:hover #im
+{display: block;
+left: 500px;
+top: 670px;}
+#menu111 ul #mag {
+position: absolute;
+z-index: 500;
+}
+div#menu111 ul #mag {
+display: none;
+}
+div#menu111 ul li:hover #mag
+{display: block;
+left: 500px;
+top: 1220px;}
+#menu111 ul #gem {
+position: absolute;
+z-index: 500;
+}
+div#menu111 ul #gem {
+display: none;
+}
+div#menu111 ul li:hover #gem
+{display: block;
+left: 500px;
+top: 1520px;}
