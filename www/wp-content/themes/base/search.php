@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 		<div id="main">
+			<?php get_sidebar(); ?>
 			<div id="content" class="main-col">
 				<div class="content-holder">
 					<div class="content-frame">
@@ -30,12 +31,9 @@
 
 							<?php else : ?>
 							<div class="post">
-								<div class="title">
-									<h2>No posts found.</h2>
-								</div>
+								<h1>No posts found.</h1>
 								<div class="content">
 									<p> Try a different search?</p>
-									<?php get_search_form(); ?>
 								</div>
 							</div>
 							<?php endif; ?>
@@ -44,6 +42,5 @@
 					</div>
 				</div>
 			</div>
-			<?php get_sidebar(); ?>
 		</div>
 <?php get_footer(); ?>

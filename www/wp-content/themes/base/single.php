@@ -1,15 +1,14 @@
 		<?php get_header(); ?>
 		<div id="main">
+			<?php get_sidebar(); ?>
 			<div id="content" class="main-col">
 				<div class="content-holder">
 					<div class="content-frame">
 						<div class="content-section">
 							<h1><?php the_title(); ?></h1>
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-							<div class="open-close">
 								<?php the_content(''); ?>
 								<p><?php comments_popup_link('0 comments','1 comment','% comments','comments'); ?></p>
-							</div>
 
 							<?php comments_template(); ?>
 
@@ -30,6 +29,5 @@
 					</div>
 				</div>
 			</div>
-			<?php get_sidebar(); ?>
 		</div>
 		<?php get_footer(); ?>

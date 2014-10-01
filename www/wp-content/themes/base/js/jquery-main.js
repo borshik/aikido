@@ -57,8 +57,8 @@ function initPhotos(){
 
 // accordion menu init
 function initAccordion() {
-	jQuery('ul.accordion').slideAccordion({
-		opener: 'a.opener',
+	jQuery('#menu-side-menu').slideAccordion({
+		opener: 'span.opener',
 		slider: 'div.slide',
 		animSpeed: 300
 	});

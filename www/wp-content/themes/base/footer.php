@@ -17,7 +17,7 @@
 					?>
 				</div>
 			</div>
-			<a href="#header" class="btn-top"><<<</a>
+			<a href="#wrapper" class="btn-top"><<<</a>
 		</div>
 	</div>
 <?php wp_footer(); ?>

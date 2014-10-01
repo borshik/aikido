@@ -6,6 +6,7 @@ Template Name: Blog Template
 
 		<?php get_header(); ?>
 		<div id="main">
+			<?php get_sidebar(); ?>
 			<div id="content" class="main-col">
 				<div class="content-holder">
 					<div class="content-frame">
@@ -23,6 +24,5 @@ Template Name: Blog Template
 					</div>
 				</div>
 			</div>
-			<?php get_sidebar(); ?>
 		</div>
 		<?php get_footer(); ?>

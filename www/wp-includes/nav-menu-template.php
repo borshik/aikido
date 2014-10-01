@@ -46,7 +46,7 @@ class Walker_Nav_Menu extends Walker {
 	 */
 	function start_lvl( &$output, $depth = 0, $args = array() ) {
 		$indent = str_repeat("\t", $depth);
-		$output .= "\n$indent<ul class=\"sub-menu\">\n";
+		$output .= "\n$indent<span class=\"opener\"></span><div class=\"slide\"><ul class=\"sub-menu\">\n";
 	}
 
 	/**
@@ -62,7 +62,7 @@ class Walker_Nav_Menu extends Walker {
 	 */
 	function end_lvl( &$output, $depth = 0, $args = array() ) {
 		$indent = str_repeat("\t", $depth);
-		$output .= "$indent</ul>\n";
+		$output .= "$indent</ul></div>\n";
 	}
 
 	/**

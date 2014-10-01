@@ -4,12 +4,12 @@
 class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
 	function start_lvl(&$output, $depth) {
 		$indent = str_repeat("\t", $depth);
-		$output .= "\n$indent<ul class=\"sub-menu\">\n";
+		$output .= "\n$indent<div class=\"slide\"><ul class=\"sub-menu\">\n";
 	}
 
 	function end_lvl(&$output, $depth) {
 		$indent = str_repeat("\t", $depth);
-		$output .= "$indent</ul>\n";
+		$output .= "$indent</ul></div>\n";
 	}
 
 	function start_el(&$output, $item, $depth, $args) {
